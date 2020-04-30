@@ -1,7 +1,13 @@
 {
-    "private": true,
-    "dependencies": {
-        "@storybook/addons": "^5.2.4",
-        "@storybook/react": "^5.2.4"
-    }
+  "private": true,
+  "dependencies": {
+    "@storybook/addons": "^5.2.4",
+    "@storybook/react": "^5.2.4",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
